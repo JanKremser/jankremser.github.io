@@ -1,5 +1,4 @@
 import { renderToString } from 'vue/server-renderer';
-import { defineAsyncComponent } from 'vue';
 
 import fs from "fs"
 import path from "path"
@@ -23,7 +22,7 @@ function readAllPages(directory, callback) {
 
 async function readerPage(page, directory) {
     let content = await renderToString(page).then((html) => {
-        return INDEX_HTML.replace("{{ app }}", html);
+        return INDEX_HTML.replace("{{ app }}", html).replaceAll("\n", "");
     })
 
     let fullPath = `${directory.replace("./pages", "./dist")}.html`

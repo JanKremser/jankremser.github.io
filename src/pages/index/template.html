@@ -1,1 +1,38 @@
-<button @click="count++">{{ count }}</button>
+<main class="container">
+
+    <header style="height: 60vh;">
+        <div style="position: absolute; top: 30%; transform: translateY(-50%); margin-left: 3rem;">
+            <h1 style="font-size: 3rem; margin: 0;">I'm</h1>
+            <h2>
+                <span style="color: #07acc9;">Jan</span> Kremser
+            </h2>
+        </div>
+    </header>
+
+    <div class="grid">
+        <article
+            style="clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%, 0% 0);"
+        >
+            <github-icon style="z-index: -1; position: fixed; height: 10rem; transform: translateY(-5rem) translateX(-5rem);"></github-icon>
+
+            <a href="#" role="button" class="secondary outline" style="float: right;">GitHub</a>
+        </article>
+        
+        <article
+            style="clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%, 0% 0);"
+        >
+            <instagram-icon style="z-index: -1; position: fixed; height: 10rem; transform: translateY(-5rem) translateX(-5rem);"></instagram-icon>
+
+            <a href="#" role="button" class="secondary outline" style="float: right;">Instagram</a>
+        </article>
+
+        <article
+            style="clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%, 0% 0);"
+        >
+            <linkedin-icon style="z-index: -1; position: fixed; height: 8.5rem; transform: translateY(-4rem) translateX(-3rem);"></linkedin-icon>
+
+            <a href="#" role="button" class="secondary outline" style="float: right;">LinkedIn</a>
+        </article>
+    </div>
+
+</main>
