@@ -1,0 +1,15 @@
+.media-cards {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%, 0% 0);
+}
+
+.media-icons {
+    z-index: -1; 
+    position: absolute; 
+    height: 10rem; 
+    transform: translateY(-5rem) translateX(-5rem);
+
+    &.linkedin {
+        height: 8.5rem; 
+        transform: translateY(-4rem) translateX(-3rem);
+    }
+}
