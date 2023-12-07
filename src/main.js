@@ -39,6 +39,10 @@ async function readerPage(page, directory) {
     writeStream.end();
 }
 
+function copyAssets() {
+    fs.cpSync('./src/assets', "./dist", {recursive: true});
+}
+
 readAllPages('./src/pages', async function (directory, file) {
     let clearDir = `${directory.replace("src/", "")}`;
     let importFile = `${clearDir}/${file}`;
@@ -46,4 +50,6 @@ readAllPages('./src/pages', async function (directory, file) {
     let page = (await import(importFile)).default;
 
     await readerPage(page, clearDir);
+
+    copyAssets();
 });

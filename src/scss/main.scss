@@ -13,3 +13,16 @@
         transform: translateY(-4rem) translateX(-3rem);
     }
 }
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 15rem; 
+        border-radius: 0.5rem;
+        border: 0.1rem white solid;
+        object-fit: cover; 
+    }
+}
