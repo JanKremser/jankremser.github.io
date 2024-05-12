@@ -21,8 +21,30 @@
 
     img {
         height: 15rem; 
-        border-radius: 0.5rem;
+        width: 15rem;
+        border-radius: 50%;
         border: 0.1rem white solid;
         object-fit: cover; 
+    }
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+article {
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border-radius: 0.5rem;
+        }
     }
 }
